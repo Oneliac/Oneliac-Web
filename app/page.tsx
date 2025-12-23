@@ -97,7 +97,7 @@ export default function LandingPage() {
             {/* Headline */}
             <h1 className="text-6xl md:text-8xl font-serif text-white leading-[0.95] tracking-tight mb-8">
               Privacy-preserving <br />
-              <span className="italic font-light text-zinc-500">healthcare AI.</span>
+              <span className="italic font-light text-zinc-500">Oneliac healthcare AI.</span>
             </h1>
 
             {/* Subheader */}
@@ -415,7 +415,7 @@ export default function LandingPage() {
           <div className="col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-4 h-4 bg-cyan-500 rounded-sm rotate-45"></div>
-              <span className="text-white font-medium">ZK Healthcare</span>
+              <span className="text-white font-medium">Oneliac ZK Healthcare</span>
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed">
               The infrastructure for the autonomous healthcare economy. Built for privacy, verified by math.
@@ -486,7 +486,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600 font-mono">
-          <p>© 2025 ZK Healthcare. Licensed under Apache 2.0.</p>
+          <p>© 2025 Oneliac ZK Healthcare. Licensed under Apache 2.0.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">
               TWITTER
