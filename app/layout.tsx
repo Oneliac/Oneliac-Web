@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ZK Healthcare | Privacy-Preserving AI",
-  description: "Decentralized medical analysis without data leaks. Keep patient data private, verify eligibility instantly, and enable federated learning via zero-knowledge proofs.",
+  title: "oneliac Healthcare | Privacy-Preserving AI",
+  description: "oneliac is a Decentralized medical analysis without data leaks. Keep patient data private, verify eligibility instantly, and enable federated learning via zero-knowledge proofs.",
 };
 
 export default function RootLayout({
