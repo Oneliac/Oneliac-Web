@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
   ShieldCheck,
@@ -8,10 +8,13 @@ import {
   Cpu,
   CheckCircle,
   Menu,
+  Copy,
+  Check,
 } from 'lucide-react';
 
 export default function LandingPage() {
   const revealRefs = useRef<(HTMLElement | null)[]>([]);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const observerOptions = {
@@ -39,6 +42,12 @@ export default function LandingPage() {
     if (el && !revealRefs.current.includes(el)) {
       revealRefs.current.push(el);
     }
+  };
+
+  const handleCopyContractAddress = () => {
+    navigator.clipboard.writeText('Coming Soon');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -122,19 +131,19 @@ export default function LandingPage() {
 
         {/* Bottom Metrics Strip */}
         <div className="absolute bottom-0 w-full border-t border-white/10 bg-white/5 backdrop-blur-sm reveal delay-300 overflow-hidden" ref={addRevealRef}>
-          <div className="metrics-scroll flex whitespace-nowrap gap-24 px-6 py-6 text-xs font-mono text-zinc-400 uppercase tracking-widest">
-            <div className="flex items-center gap-2 flex-shrink-0">
+          <div className="metrics-scroll flex whitespace-nowrap py-6 text-xs font-mono text-zinc-400 uppercase tracking-widest">
+            <div className="flex items-center gap-2 flex-shrink-0 px-12">
               <span className="text-emerald-500">●</span> System Operational
             </div>
-            <div className="flex-shrink-0">Latency: &lt; 50ms</div>
-            <div className="flex-shrink-0">Encryption: zk-SNARKs (Groth16)</div>
-            <div className="flex-shrink-0">Compliance: HIPAA Ready</div>
-            <div className="flex items-center gap-2 flex-shrink-0">
+            <div className="flex-shrink-0 px-12">Latency: &lt; 50ms</div>
+            <div className="flex-shrink-0 px-12">Encryption: zk-SNARKs (Groth16)</div>
+            <div className="flex-shrink-0 px-12">Compliance: HIPAA Ready</div>
+            <div className="flex items-center gap-2 flex-shrink-0 px-12">
               <span className="text-emerald-500">●</span> System Operational
             </div>
-            <div className="flex-shrink-0">Latency: &lt; 50ms</div>
-            <div className="flex-shrink-0">Encryption: zk-SNARKs (Groth16)</div>
-            <div className="flex-shrink-0">Compliance: HIPAA Ready</div>
+            <div className="flex-shrink-0 px-12">Latency: &lt; 50ms</div>
+            <div className="flex-shrink-0 px-12">Encryption: zk-SNARKs (Groth16)</div>
+            <div className="flex-shrink-0 px-12">Compliance: HIPAA Ready</div>
           </div>
         </div>
       </section>
@@ -485,18 +494,34 @@ export default function LandingPage() {
             </ul>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600 font-mono">
-          <p>© 2025 Oneliac ZK Healthcare. Licensed under Apache 2.0.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">
-              TWITTER
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              GITHUB
-            </a>
-            <a href="#" className="hover:text-white transition-colors">
-              DISCORD
-            </a>
+        <div className="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 space-y-6">
+          <div className="flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600 font-mono">
+            <p>© 2025 Oneliac ZK Healthcare. Licensed under Apache 2.0.</p>
+            <div className="flex gap-6 mt-4 md:mt-0">
+              <a href="#" className="hover:text-white transition-colors">
+                TWITTER
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                GITHUB
+              </a>
+              <a href="#" className="hover:text-white transition-colors">
+                DISCORD
+              </a>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-xs text-zinc-600 font-mono">
+            <span>Contract Address:</span>
+            <button
+              onClick={handleCopyContractAddress}
+              className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer group"
+            >
+              Coming Soon
+              {copied ? (
+                <Check className="w-3 h-3" />
+              ) : (
+                <Copy className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              )}
+            </button>
           </div>
         </div>
       </footer>

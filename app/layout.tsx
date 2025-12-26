@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "oneliac Healthcare | Privacy-Preserving AI",
-  description: "oneliac is a Decentralized medical analysis without data leaks. Keep patient data private, verify eligibility instantly, and enable federated learning via zero-knowledge proofs.",
+  title: "Oneliac Healthcare | Privacy-Preserving AI",
+  description: "Oneliac is a Decentralized medical analysis without data leaks. Keep patient data private, verify eligibility instantly, and enable federated learning via zero-knowledge proofs.",
 };
 
 export default function RootLayout({
