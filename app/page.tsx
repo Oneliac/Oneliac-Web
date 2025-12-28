@@ -501,7 +501,7 @@ export default function LandingPage() {
               <a href="#" className="hover:text-white transition-colors">
                 TWITTER
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://github.com/Oneliac" className="hover:text-white transition-colors">
                 GITHUB
               </a>
               <a href="#" className="hover:text-white transition-colors">
