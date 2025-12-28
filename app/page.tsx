@@ -67,17 +67,17 @@ export default function LandingPage() {
             <a href="#" className="hover:text-white transition-colors">
               Developers
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Docs
+            <a href="https://t.me/oneliac_bot" className="hover:text-white transition-colors">
+            Telegram Bot
             </a>
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="#" className="text-sm text-zinc-400 hover:text-white transition-colors hidden sm:block">
-              Sign In
+            <a href="https://t.me/oneliac_bot" className="text-sm text-zinc-400 hover:text-white transition-colors hidden sm:block">
+              How to use Bot
             </a>
             <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-cyan-50 transition-colors">
-              Contact Sales
+              Documentation
             </button>
           </div>
         </div>
@@ -436,17 +436,17 @@ export default function LandingPage() {
             <ul className="space-y-4 text-sm text-zinc-500">
               <li>
                 <a href="#" className="hover:text-cyan-400 transition-colors">
-                  Settlement
+                   Intelligence
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-cyan-400 transition-colors">
-                  Intelligence
+                 Governance
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-cyan-400 transition-colors">
-                  Governance
+                  
                 </a>
               </li>
             </ul>
@@ -483,12 +483,12 @@ export default function LandingPage() {
               </li>
               <li>
                 <a href="#" className="hover:text-cyan-400 transition-colors">
-                  Blog
+                  
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-cyan-400 transition-colors">
-                  Careers
+                
                 </a>
               </li>
             </ul>
