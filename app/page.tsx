@@ -61,10 +61,10 @@ export default function LandingPage() {
           </div>
 
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="https://github.com/Oneliac" className="hover:text-white transition-colors">
               Solutions
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="https://github.com/Oneliac" className="hover:text-white transition-colors">
               Developers
             </a>
             <a href="https://t.me/oneliac_bot" className="hover:text-white transition-colors">
@@ -76,8 +76,8 @@ export default function LandingPage() {
             <a href="https://t.me/oneliac_bot" className="text-sm text-zinc-400 hover:text-white transition-colors hidden sm:block">
               How to use Bot
             </a>
-            <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-cyan-50 transition-colors">
-              Documentation
+            <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-cyan-50 transition-colors"  >
+            Documentation
             </button>
           </div>
         </div>
@@ -435,12 +435,12 @@ export default function LandingPage() {
             <h4 className="text-white font-medium mb-6">Product</h4>
             <ul className="space-y-4 text-sm text-zinc-500">
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <a href="https://github.com/Oneliac" className="hover:text-cyan-400 transition-colors">
                    Intelligence
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <a href="https://github.com/Oneliac" className="hover:text-cyan-400 transition-colors">
                  Governance
                 </a>
               </li>
@@ -456,17 +456,17 @@ export default function LandingPage() {
             <h4 className="text-white font-medium mb-6">Resources</h4>
             <ul className="space-y-4 text-sm text-zinc-500">
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <a href="https://github.com/Oneliac" className="hover:text-cyan-400 transition-colors">
                   Documentation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <a href="https://github.com/Oneliac" className="hover:text-cyan-400 transition-colors">
                   API Reference
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <a href="https://github.com/Oneliac" className="hover:text-cyan-400 transition-colors">
                   Status
                 </a>
               </li>
@@ -477,7 +477,7 @@ export default function LandingPage() {
             <h4 className="text-white font-medium mb-6">Company</h4>
             <ul className="space-y-4 text-sm text-zinc-500">
               <li>
-                <a href="#" className="hover:text-cyan-400 transition-colors">
+                <a href="https://github.com/Oneliac" className="hover:text-cyan-400 transition-colors">
                   About
                 </a>
               </li>
@@ -498,15 +498,11 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600 font-mono">
             <p>© 2025 Oneliac ZK Healthcare. Licensed under Apache 2.0.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">
-                TWITTER
-              </a>
+              
               <a href="https://github.com/Oneliac" className="hover:text-white transition-colors">
                 GITHUB
               </a>
-              <a href="#" className="hover:text-white transition-colors">
-                DISCORD
-              </a>
+              
             </div>
           </div>
           <div className="flex items-center gap-2 text-xs text-zinc-600 font-mono">
