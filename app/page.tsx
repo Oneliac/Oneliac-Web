@@ -74,10 +74,12 @@ export default function LandingPage() {
 
           <div className="flex items-center gap-4">
             <a href="https://t.me/oneliac_bot" className="text-sm text-zinc-400 hover:text-white transition-colors hidden sm:block">
-              How to use Bot
+             
             </a>
             <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-cyan-50 transition-colors"  >
-            Documentation
+            <a href="https://github.com/Oneliac" className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-cyan-50 transition-colors">
+            Documentation 
+            </a>
             </button>
           </div>
         </div>
