@@ -45,7 +45,7 @@ export default function LandingPage() {
   };
 
   const handleCopyContractAddress = () => {
-    navigator.clipboard.writeText('Coming Soon');
+    navigator.clipboard.writeText('ETNCCPAor4wGaE1ut7t8mxp7EWF2AN3X1xJEGbASpump');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -488,7 +488,7 @@ export default function LandingPage() {
               onClick={handleCopyContractAddress}
               className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer group"
             >
-              Coming Soon
+              ETNCCPAor4wGaE1ut7t8mxp7EWF2AN3X1xJEGbASpump
               {copied ? (
                 <Check className="w-3 h-3" />
               ) : (
