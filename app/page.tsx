@@ -64,9 +64,9 @@ export default function LandingPage() {
             <a href="https://github.com/Oneliac" className="hover:text-white transition-colors">
               Developers
             </a>
-            <a href="https://t.me/oneliac_bot" className="hover:text-white transition-colors">
+            {/* <a href="https://t.me/oneliac_bot" className="hover:text-white transition-colors">
             Telegram Bot
-            </a>
+            </a> */}
           </div>
 
           <div className="flex items-center gap-4">
